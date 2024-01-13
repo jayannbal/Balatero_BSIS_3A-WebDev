@@ -99,8 +99,13 @@ section {
 
 .home {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
+  background-image: url(/assets/pinktulipsBG.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .home-img img {
@@ -184,8 +189,8 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  /* background: var(--second-bg-color); */
-  background-image: url(/assets/pinktulipsBG.png);
+  background: var(--second-bg-color);
+  /* background-image: url(/assets/pinktulipsBG.png); */
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -304,6 +309,38 @@ span {
   text-align: justify;
 }
 
+/* QUOTE SECTION */
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-image: url(/assets/pinktulipsBG.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: left;
+  font-size: 5rem;
+  padding-bottom: 5%;
+  padding-top: -10%;
+}
+
+.quote-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.quote-content h3 {
+  font-size: 2.6rem;
+}
+
+.quote-content h4 {
+  font-size: 2.8rem;
+  color: var(--main-color);
+  padding-top: 3%;
+}
+
+/* PROJECT SECTION */
 .project {
   background: var(--second-bg-color);
 }
