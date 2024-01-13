@@ -44,9 +44,12 @@ ScrollReveal().reveal(
   ".home-img,.project-container,.portfolio-box,.contact form",
   { origin: "bottom" }
 );
-ScrollReveal().reveal(".home-content h1,.about-img, .education", {
-  origin: "left",
-});
+ScrollReveal().reveal(
+  ".home-content h1, .quote-content, .about-img, .education",
+  {
+    origin: "left",
+  }
+);
 ScrollReveal().reveal(".home-content p,.about-content, .education2", {
   origin: "right",
 });
@@ -57,4 +60,22 @@ const typed = new Typed(".multiple-text", {
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
+});
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
 });
