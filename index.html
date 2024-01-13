@@ -2,222 +2,318 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jay-Ann Balatero Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Balatero Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jay-Ann Balatero</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Jay-Ann Balatero</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/balatero_profilepic.png" alt="Profile Picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hi there! I am</p>
-        <h1 class="title">Jay-Ann Balatero</h1>
-        <p class="section__text__p2">An Information System Student</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/CV_Balatero.jpg')"
-          >
-            Download CV
-          </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href = './#contact'"
-          >
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/github.png"
-            alt="My Github Profile"
-            class="icon"
-            onclick="location.href='https://github.com/jayannbal'"
-          />
-          <img
-            src="./assets/facebook.png"
-            alt="My Facebook Profile"
-            class="icon"
-            onclick="location.href='https://www.facebook.com/jayannbalatero'"
-          />
-          <img
-            src="./assets/instagram-logo.png"
-            alt="My Instagram Profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/jayanngela/'"
-          />
-          <img
-            src="./assets/twitter.png"
-            alt="My Twitter Profile"
-            class="icon"
-            onclick="location.href='https://twitter.com/jayanngela'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get to Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Balatero_ProfilePic.JPG"
-            alt="About Picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="text-container">
-            <p>
-              A third year student of Technological University of the Philippines - Manila taking up 
-              Bachelor of Science Information System. 
-              I've gained hands-on experience through school activities and online courses, where I applied my
-              knowledge in practical settings. Outside of school, I enjoy dancing and watching series and movies with my family. Feel free
-              to connect with me—I'm always eager to discuss all things tech!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+    <!--body-->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="/assets/BalateroLogo.png" alt="Balatero logo" />
+      </a>
 
-    <section id="projects">
-      <p class="section__text__p1">Here are my</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/game image.png"
-                alt="Game Project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Game Project</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:file:///C:/Users/jayan/Downloads/Game%20Project%20Source%20Code.pdf'"
-              >
-                Source Code
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/atm image.png"
-                alt="ATM Transaction and Registration"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ATM Transaction and Registration</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/madzamador/BSIS_REPOSITORY.git'"
-              >
-                Source code
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/website image.png"
-                alt="Confianza & Vogue Website"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Confianza & Vogue Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/madzamador/BSIS_REPOSITORY.git'"
-              >
-                Source Code
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Connect with me</p>
-      <h1 class="title">Contacts</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:jayannbalatero@gmail.com">jayannbalatero@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/facebook.png"
-            alt="Facebook icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.facebook.com/jayannbalatero">Facebook.com</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#home" onclick="toggleMenu()">About</a></li>
-            <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </ul>
-        </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <p>Copyrigtht &#169; 2023 Jay-Ann Balatero. All Rights Reserved.</p>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi There! I'm</h3>
+        <h1>JAY-ANN BALATERO</h1>
+        <h3>An <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href="https://github.com/jayannbal"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="mailto:jayannbalatero@gmail.com"
+            ><i class="bx bxs-envelope"></i
+          ></a>
+          <a href="https://www.instagram.com/jayanngela"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jayann-angela-balatero-b0b289298/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+        </div>
+        <a href="C:\Users\shrey\Downloads\B.-Software-Engineer.docx" class="btn"
+          >Download CV</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="/assets/balatero_profilepic.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>That You Might Want To Know</h3>
+        <p>
+          A third year student of Technological University of the Philippines -
+          Manila taking up Bachelor of Science Information System. I'm actively
+          learning and building my skills in programming languages like C, C++,
+          Phyton and Javascipt. I've made good progress, but I'm still exploring
+          the depths of these technologies and excited to keep growing.I've
+          gained hands-on experience through school activities and online
+          courses, where I applied my knowledge in practical settings. Outside
+          of school, I enjoy dancing and watching series and movies with my
+          family.
+        </p>
+        <p>
+          Feel free to connect with me! I'm always eager to discuss all things
+          tech with fellow tech enthusiasts. Between lines of code and dance
+          moves, you'll always find me ready to connect and explore the endless
+          possibilities of the digital world.
+        </p>
+        <a href="#contact" class="btn">Connect With Me</a>
+      </div>
+    </section>
+
+    <!-- EDUCCATION SECTION -->
+    <section class="education-content" id="education">
+      <div class="container">
+        <div class="row">
+          <div class="education">
+            <h3 class="title">Education</h3>
+            <div class="row">
+              <div class="timeline-box">
+                <div class="timeline">
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">College</h3>
+                    <h4 class="timeline-title">
+                      Technological University Of The Philippines - Manila
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2019 - Present
+                    </h4>
+                  </div>
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">
+                      Senion High School (STEM), Grade 12-11
+                    </h3>
+                    <h4 class="timeline-title">
+                      Philippine Christian University - Dasma Campus
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2018-2020
+                    </h4>
+                  </div>
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">Contact Center Service</h3>
+                    <h4 class="timeline-title">
+                      Power Skills - Dasmarinas City Cavite
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2020
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="education2">
+            <div class="row">
+              <div class="timeline-box">
+                <div class="timeline">
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">
+                      Junior High School, Grade 10-7
+                    </h3>
+                    <h4 class="timeline-title">
+                      Immaculate Conception Academy - North Campus Dasmarinas
+                      City Cavite
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2017-2018
+                    </h4>
+                  </div>
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">
+                      Japanese Learning Proficiency
+                    </h3>
+                    <h4 class="timeline-title">
+                      Kamusta Ka Foundation - Dasmarinas City Cavite
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2015
+                    </h4>
+                  </div>
+
+                  <!-- Timeline-item -->
+                  <div class="timeline-item">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-title">Elementary, Grade 6-1</h3>
+                    <h4 class="timeline-title">
+                      Salitran Elementary School - Dasmarinas City Cavite
+                    </h4>
+                    <h4 class="timeline-title">
+                      <i class="fa fa-calendar"></i> 2008 - 2014
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="about" id="about">
+      <!-- <div class="about-img">
+        <img src="https://wallpaperaccess.com/full/1385382.jpg" alt="" />
+      </div> -->
+      <div class="about-content">
+        <h2 class="heading">My <span>Favorite Quote</span></h2>
+        <h3>
+          "Don't be afraid, for I am with you. Don't be discourage, for I am
+          your God. I will Strengthen you and help you. I will hold you up with
+          my victorious right hand."
+        </h3>
+        <h4>Isaiah 41:10 NLT</h4>
+      </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section class="project" id="project">
+      <h2 class="heading">My <span>Projects</span></h2>
+
+      <div class="project-container">
+        <div class="project-box">
+          <img
+            src="/assets/game image.png"
+            alt="ATM Transaction and Registration"
+            class="project-img"
+          />
+          <h3>Hoolahoop Game</h3>
+          <p>
+            Motivated designer and developer with experience creating custom
+            websites through PHP and CSS. DHTML and JavaScript.
+          </p>
+          <a href="#" class="btn">Source Code</a>
+        </div>
+
+        <div class="project-box">
+          <img
+            src="/assets/atm image.png"
+            alt="ATM Transaction and Registration"
+            class="project-img"
+          />
+          <h3>ATM Transaction and Registration</h3>
+          <p>
+            You cannot make a good design if you do not understand people;
+            design is made for people.
+          </p>
+          <a href="#" class="btn">Source Code</a>
+        </div>
+
+        <div class="project-box">
+          <img
+            src="/assets/website image.png"
+            alt="ATM Transaction and Registration"
+            class="project-img"
+          />
+          <h3>Confianza & Vogue</h3>
+          <p>
+            I'm UI/UX Designer with a great passion to my work. The main goal is
+            to create modern, attractive and user-friendly interfaces and find
+            creative and simple solutions for your business.
+          </p>
+          <a href="#" class="btn">Source Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>ME!</span></h2>
+
+      <form action="#" name="submit-to-google-sheet">
+        <div class="input-box">
+          <input type="text" name="Name" placeholder="Full Name" />
+          <input
+            type="email"
+            name="Email Address"
+            placeholder="Email Address"
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            name="Mobile Number"
+            placeholder="Mobile Number"
+          />
+          <input type="text" name="Email Subject" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name="Your Message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+      <span id="msg"></span>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Jay-Ann Balatero | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
