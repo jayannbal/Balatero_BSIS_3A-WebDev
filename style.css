@@ -364,13 +364,14 @@ span {
 }
 .project-container .project-box {
   width: 30rem;
-  height: 100%;
+  height: 45rem; /* Fixed height for uniformity */
   background: var(--bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
+  overflow: hidden; /* Prevent content overflow */
 }
 .project-container .project-box:hover {
   border-color: var(--main-color);
@@ -382,6 +383,7 @@ span {
 }
 .project-box h3 {
   font-size: 2.6rem;
+  margin: 1.5rem 0; /* Added margin for spacing */
 }
 .project-box p {
   font-size: 1.6rem;
@@ -389,8 +391,9 @@ span {
 }
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%; /* Ensures consistency in width */
+  height: 20rem; /* Fixed height for images */
+  object-fit: cover; /* Ensures the image fits within the box without distortion */
 }
 
 .contact h2 {
